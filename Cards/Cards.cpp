@@ -57,17 +57,17 @@ public:
 Cards::Cards(Rank value, Suit type, bool present) :c_rank(value),c_type(type),available(present){}
 
 void Cards::PrintCard() {
-    std::cout << c_type;
+    std::cout << c_type << std::endl<<c_rank;
 }
 
   
 int main()
 {
-    Rank r = Ace;
+    Rank r = Two;
     Suit s = Heart;
     Cards* J = new Cards(r, s,true);
     J->PrintCard();
- 
+    std::cin.get();
     return 0;
 }
 
